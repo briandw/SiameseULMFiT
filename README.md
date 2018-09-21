@@ -5,5 +5,11 @@ This an attempt to add an [InferSent](https://arxiv.org/pdf/1705.02364.pdf) type
 
 ## Running the notebook
 * The fast.ai library must be installed and the fastai folder available in the root folder
-* The data dir with the SNLI files should be download [data.zip](https://github.com/briandw/SiameseULMFiT/releases/download/1/data.zip) and put it in the root dir.
-* If you want to start from the beginning, be sure to download the pretrained [wikitext model](http://files.fast.ai/models/wt103/) into the data/aclImdb folder
+* Download the [SNLI corpus](https://nlp.stanford.edu/projects/snli/snli_1.0.zip) and unzip it into the data folder.
+* Download the pretrained [wikitext model](http://files.fast.ai/models/wt103/) into the data/aclImdb folder
+* Run the notebooks in order:
+1. ULMFiT_Tokenize 
+2. ULMFiT_Pretrain
+3. ULMFiT_Classify
+
+If you want to skip the tokenizing step, [download this file](https://github.com/briandw/SiameseULMFiT/releases/download/1/data.zip) and put it into the data section.
